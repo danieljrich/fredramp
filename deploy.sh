@@ -1,58 +1,25 @@
 #!/bin/bash
 
-# FredRAMP.com Deployment Script
-# This script helps deploy the parody site to web hosting
+# FredRAMP.com - GitHub Pages Deployment Script
+# This script is no longer needed since files are now in the root directory
+# GitHub Pages will automatically deploy from the root
 
-echo "🚀 FredRAMP.com Deployment Script"
-echo "=================================="
+echo "🚀 FredRAMP.com - GitHub Pages Ready!"
+echo "======================================"
 echo ""
-
-# Check if required files exist
-echo "📁 Checking project files..."
-required_files=("index.html" "styles.css" "script.js" "FredRampLogo.png" "FredlandFlag.png" "mountain_abstract.svg" "gsa-star-mark-whtlogo.svg" "custom-linkedin-icon.svg" "uswds/img/sprite.svg")
-
-for file in "${required_files[@]}"; do
-    if [ -f "$file" ]; then
-        echo "✅ $file"
-    else
-        echo "❌ Missing: $file"
-        exit 1
-    fi
-done
-
+echo "✅ Your repository is now ready for GitHub Pages deployment!"
 echo ""
-echo "✅ All required files found!"
+echo "📁 Files in root directory:"
+ls -la | grep -E '\.(html|css|js|png|svg)$'
 echo ""
-
-# Create deployment package
-echo "📦 Creating deployment package..."
-if [ -d "deploy" ]; then
-    rm -rf deploy
-fi
-
-mkdir deploy
-cp -r * deploy/
-cd deploy
-
-# Remove development files
-rm -f deploy.sh
-rm -f README.md
-
-echo "✅ Deployment package created in 'deploy/' directory"
+echo "🌐 Next Steps:"
+echo "1. Push these changes to your GitHub repo"
+echo "2. Go to Settings → Pages"
+echo "3. Select 'Deploy from a branch'"
+echo "4. Choose 'main' branch and '/' (root) folder"
+echo "5. Add custom domain: fredramp.com"
 echo ""
-
-# Show deployment instructions
-echo "🌐 Deployment Instructions:"
-echo "============================"
-echo ""
-echo "1. Upload all files from the 'deploy/' directory to your web hosting"
-echo "2. Ensure your domain 'fredramp.com' points to your hosting"
-echo "3. The site should work immediately - no server-side requirements"
-echo ""
-echo "📁 Files to upload:"
-ls -la
-echo ""
-echo "🎉 Your FredRAMP parody site is ready to deploy!"
+echo "🎉 Your site will deploy automatically!"
 echo ""
 echo "⚠️  Remember: This is a parody site for entertainment purposes only!"
 echo "   It is NOT affiliated with any government entity."

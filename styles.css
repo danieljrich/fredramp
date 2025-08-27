@@ -55,7 +55,7 @@ body {
 }
 
 .usa-banner__header-flag {
-  width: 8rem;
+  width: 2rem;
   height: auto;
   border-radius: 4px;
 }
@@ -169,7 +169,7 @@ body {
 .usa-logo__img {
   height: 3.5rem;
   width: auto;
-  filter: invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .usa-menu-btn {
@@ -339,39 +339,6 @@ main {
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-}
-
-/* Logo Display Section */
-.logo-display {
-  text-align: center;
-  padding: 3rem 0;
-  margin: 2rem 0;
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.hero-logo {
-  height: 8rem;
-  width: auto;
-  filter: invert(1);
-  transition: transform 0.3s ease;
-}
-
-.hero-logo:hover {
-  transform: scale(1.05);
-}
-
-.logo-tagline {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--usa-white);
-  margin: 0;
-  opacity: 0.9;
 }
 
 /* Sections */
