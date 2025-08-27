@@ -169,7 +169,7 @@ body {
 .usa-logo__img {
   height: 3.5rem;
   width: auto;
-  filter: brightness(0) invert(1);
+  filter: invert(1);
 }
 
 .usa-menu-btn {
@@ -369,9 +369,13 @@ main {
   flex: 0 0 58.333333%;
 }
 
+/* Responsive grid columns */
 .tablet\:grid-col-6 {
-  flex: 0 0 50%;
+  flex: 0 0 100%; /* Full width on mobile */
+  max-width: 100%;
+  width: 100%;
 }
+
 .desktop\:grid-col-1 {
   flex: 0 0 8.333333%;
 }
@@ -395,6 +399,15 @@ main {
   }
 }
 
+/* Tablet and above: side by side cards */
+@media (min-width: 769px) {
+  .tablet\:grid-col-6 {
+    flex: 0 0 50% !important; /* Two columns on tablet and above */
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .desktop\:padding-bottom-0 {
     padding-bottom: 0;
@@ -411,6 +424,36 @@ main {
   height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+/* Debug: Force grid layout */
+.grid-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin: 0 -1rem !important;
+}
+
+.grid-gap {
+  gap: 2rem !important;
+}
+
+/* Custom responsive grid for the cards */
+.card-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 2rem !important;
+}
+
+.card-grid .tablet\:grid-col-6 {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+}
+
+@media (min-width: 769px) {
+  .card-grid .tablet\:grid-col-6 {
+    flex: 0 0 calc(50% - 1rem) !important;
+    width: calc(50% - 1rem) !important;
+  }
 }
 
 .fedramp-card::before {
@@ -714,8 +757,7 @@ main {
     flex-direction: column;
   }
 
-  .grid-col-6,
-  .tablet\:grid-col-6 {
+  .grid-col-6 {
     flex: 0 0 100%;
   }
 
