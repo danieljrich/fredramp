@@ -341,6 +341,44 @@ main {
   margin: 0;
 }
 
+/* Logo Display Section */
+.logo-display {
+  text-align: center;
+  padding: 3rem 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  margin: 2rem 0;
+  border-radius: 12px;
+}
+
+.logo-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  height: 8rem;
+  width: auto;
+  filter: invert(1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-tagline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--usa-white);
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* Sections */
 .usa-section {
   padding: 3rem 0;
