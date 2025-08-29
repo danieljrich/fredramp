@@ -444,6 +444,14 @@ main {
   .tablet\:margin-bottom-0 {
     margin-bottom: 0;
   }
+
+  .coffee-button-header {
+    margin-right: 0.5rem;
+  }
+
+  .coffee-button-header img {
+    height: 2rem;
+  }
 }
 
 /* Tablet and above: side by side cards */
@@ -615,6 +623,31 @@ main {
 
 .text-normal {
   font-weight: 400;
+}
+
+/* Coffee Buttons */
+.coffee-button-header {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.coffee-button-header img {
+  height: 2.5rem;
+  width: auto;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.coffee-button-header img:hover {
+  transform: scale(1.05);
+}
+
+.coffee-item img {
+  height: 2rem;
+  width: auto;
+  border-radius: 4px;
+  margin-right: 0.5rem;
 }
 
 /* Footer */
