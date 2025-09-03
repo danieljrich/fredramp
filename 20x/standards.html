@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../../FredRampLogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FredRAMP 20X Standards | FredRAMP.com</title>
+    <meta
+      name="description"
+      content="FredRAMP 20X Standards - Fred's quirky requirements for coffee, cats, basement offices, and rubber duck debugging in cybersecurity"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FredRAMP 20X Standards | FredRAMP.com" />
+    <meta
+      property="og:description"
+      content="FredRAMP 20X Standards - Fred's quirky requirements for coffee, cats, basement offices, and rubber duck debugging in cybersecurity"
+    />
+    <meta property="og:url" content="https://fredramp.com/20x/standards" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+
+  <body>
+    <div style="display: contents">
+      <section
+        class="usa-banner"
+        data-testid="usa-banner"
+        lang="en"
+        aria-label="Official government website"
+      >
+        <div class="usa-accordion">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img
+                  class="usa-banner__header-flag"
+                  src="../../FredlandFlag.png"
+                  alt="Fredland flag"
+                />
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto">
+                <p class="usa-banner__header-text">
+                  NOT an official website of the United States government
+                </p>
+                <p class="usa-banner__header-action" aria-hidden="true">
+                  Fred told us to put this here
+                </p>
+              </div>
+              <button
+                class="usa-accordion__button usa-banner__button"
+                aria-expanded="false"
+                aria-controls="usa-banner-ssr-0-content"
+                type="button"
+              >
+                <span class="usa-banner__button-text">Fred's explanation</span>
+              </button>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <div class="gradient-wrapper">
+        <div class="gradient-background"></div>
+        <div class="mountain-wrapper home-page-mountain-wrapper">
+          <img
+            src="../../mountain_abstract.svg"
+            alt="Mountain background"
+            class="mountain-img object-fit:cover"
+          />
+        </div>
+        <div class="site-header transparent">
+          <section id="top-nav" class="top-nav">
+            <div class="usa-overlay"></div>
+            <header class="usa-header usa-header--basic">
+              <div class="usa-nav-container">
+                <div class="usa-navbar">
+                  <div class="usa-logo" id="logo">
+                    <a href="../../" title="Home" aria-label="Home">
+                      <img
+                        class="desk usa-logo__img"
+                        src="../../FredRampLogo.png"
+                        alt="FredRAMP.com"
+                      />
+                    </a>
+                  </div>
+                  <div class="coffee-button-header">
+                    <a
+                      href="https://www.buymeacoffee.com/dannytherich"
+                      title="Fred needs caffeine to review your applications! ☕"
+                    >
+                      <img
+                        src="https://img.buymeacoffee.com/button-api/?text=Buy%20Fred%20Coffee&emoji=☕&slug=dannytherich&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+                        alt="Buy Fred Coffee"
+                      />
+                    </a>
+                  </div>
+                  <button class="usa-menu-btn">Menu</button>
+                </div>
+                <nav aria-label="Primary navigation" class="usa-nav site-nav">
+                  <ul class="usa-nav__primary usa-accordion">
+                    <li class="usa-nav__primary-item">
+                      <button
+                        class="usa-accordion__button usa-nav__link"
+                        aria-expanded="false"
+                        aria-controls="nav-menu-item-ssr-1"
+                      >
+                        <span>Updates & Fred's Priorities</span>
+                      </button>
+                      <ul id="nav-menu-item-ssr-1" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../blog/1">Blog</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../community">Community</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../rfcs">Requests For Comment</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../governance">Governance</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../changelog">Changelog</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../scope">Scope</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                      <button
+                        class="usa-accordion__button usa-nav__link"
+                        aria-expanded="false"
+                        aria-controls="nav-menu-item-ssr-2"
+                      >
+                        <span>FredRAMP 20X (Fred's Vision)</span>
+                      </button>
+                      <ul id="nav-menu-item-ssr-2" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../20x/goals">Goals</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../20x/phase-one">Phase One</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../20x/phase-two">Phase Two</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../20x/standards">Standards</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../20x/faqs">FAQs</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                      <button
+                        class="usa-accordion__button usa-nav__link"
+                        aria-expanded="false"
+                        aria-controls="nav-menu-item-ssr-3"
+                      >
+                        <span>Rev 5 Authorization (Fred's Rules)</span>
+                      </button>
+                      <ul id="nav-menu-item-ssr-3" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../rev5/agency-authorization"
+                            >Agency Authorization</a
+                          >
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../rev5/documents-templates"
+                            >Documents & Templates</a
+                          >
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="../../rev5/stakeholders">Stakeholders</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </header>
+          </section>
+        </div>
+
+        <main id="main-content">
+          <section class="usa-hero">
+            <div class="grid-container">
+              <div class="usa-hero__callout usa-hero__callout--primary">
+                <h1 class="usa-hero__heading">
+                  <span class="usa-hero__heading--alt"
+                    >FredRAMP 20X Standards</span
+                  >
+                  Fred's Quirky Requirements
+                </h1>
+                <p>
+                  Welcome to FredRAMP 20X Standards, where Fred outlines his
+                  unique requirements for coffee consumption, cat security,
+                  basement office operations, and rubber duck debugging. These
+                  standards ensure consistency across all FredRAMP operations.
+                </p>
+                <a
+                  class="usa-button"
+                  href="https://www.buymeacoffee.com/dannytherich"
+                  >Buy Fred Coffee ☕</a
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="grid-container usa-section">
+            <div class="grid-row grid-gap">
+              <div class="tablet:grid-col-8">
+                <h2>Standard Categories</h2>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">
+                        ☕ Coffee Consumption Standards
+                      </h3>
+                      <p class="usa-card__meta">Standard: FR-20X-COFFEE-001</p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        <strong>Purpose:</strong> Establish minimum coffee
+                        consumption requirements for all FredRAMP operations to
+                        ensure optimal security performance and productivity.
+                      </p>
+                      <p>
+                        <strong>Requirements:</strong>
+                      </p>
+                      <ul>
+                        <li>
+                          Minimum daily coffee consumption: 35 cups per person
+                        </li>
+                        <li>Coffee machine uptime: 99.9% or higher</li>
+                        <li>Emergency coffee response time: < 5 minutes</li>
+                        <li>Coffee quality: Premium grade beans only</li>
+                        <li>Coffee machine security: Level 3 encryption</li>
+                        <li>
+                          Coffee consumption monitoring: Real-time tracking
+                        </li>
+                        <li>Coffee delivery systems: Automated and secure</li>
+                        <li>Coffee-related incidents: Zero tolerance</li>
+                      </ul>
+                      <p>
+                        <strong>Compliance:</strong> All FredRAMP personnel must
+                        maintain minimum coffee consumption levels and report
+                        any coffee-related security incidents immediately.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">
+                        🐱 Cat Security Standards
+                      </h3>
+                      <p class="usa-card__meta">Standard: FR-20X-CAT-001</p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        <strong>Purpose:</strong> Establish standards for
+                        cat-based security operations, ensuring consistent and
+                        effective feline security services across all FredRAMP
+                        implementations.
+                      </p>
+                      <p>
+                        <strong>Requirements:</strong>
+                      </p>
+                      <ul>
+                        <li>Cat security certification: Level 2 or higher</li>
+                        <li>Cat treat distribution: 3 times daily minimum</li>
+                        <li>Cat security effectiveness: 85% or higher</li>
+                        <li>Cat photo integration: Required in all reports</li>
+                        <li>Cat security training: 40 hours annually</li>
+                        <li>Cat security equipment: Premium quality only</li>
+                        <li>Cat security protocols: Standardized procedures</li>
+                        <li>
+                          Cat security incidents: Immediate reporting required
+                        </li>
+                      </ul>
+                      <p>
+                        <strong>Compliance:</strong> All cat security
+                        professionals must maintain certification and follow
+                        standardized security protocols.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">
+                        🏠 Basement Office Standards
+                      </h3>
+                      <p class="usa-card__meta">
+                        Standard: FR-20X-BASEMENT-001
+                      </p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        <strong>Purpose:</strong> Establish standards for
+                        basement office operations, ensuring optimal security,
+                        efficiency, and coffee accessibility.
+                      </p>
+                      <p>
+                        <strong>Requirements:</strong>
+                      </p>
+                      <ul>
+                        <li>Basement office location: Below ground level</li>
+                        <li>Ventilation systems: Advanced air circulation</li>
+                        <li>Emergency exits: Multiple routes available</li>
+                        <li>Coffee delivery systems: Automated and secure</li>
+                        <li>Basement office security: Level 4 protection</li>
+                        <li>
+                          Basement office efficiency: 150% vs. traditional
+                        </li>
+                        <li>Basement office maintenance: Weekly inspections</li>
+                        <li>Basement office incidents: Zero tolerance</li>
+                      </ul>
+                      <p>
+                        <strong>Compliance:</strong> All basement offices must
+                        meet security standards and maintain optimal efficiency.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">
+                        🦆 Rubber Duck Debugging Standards
+                      </h3>
+                      <p class="usa-card__meta">
+                        Standard: FR-20X-RUBBERDUCK-001
+                      </p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        <strong>Purpose:</strong> Establish standards for rubber
+                        duck debugging operations, ensuring consistent and
+                        effective debugging practices across all FredRAMP
+                        implementations.
+                      </p>
+                      <p>
+                        <strong>Requirements:</strong>
+                      </p>
+                      <ul>
+                        <li>Rubber duck placement: On every security desk</li>
+                        <li>Rubber duck debugging sessions: Daily minimum</li>
+                        <li>
+                          Rubber duck security protocols: Standardized
+                          procedures
+                        </li>
+                        <li>Rubber duck maintenance: Weekly cleaning</li>
+                        <li>
+                          Rubber duck debugging effectiveness: 30% improvement
+                        </li>
+                        <li>
+                          Rubber duck security training: 20 hours annually
+                        </li>
+                        <li>
+                          Rubber duck incident response: Immediate protocols
+                        </li>
+                        <li>Rubber duck satisfaction: 100% required</li>
+                      </ul>
+                      <p>
+                        <strong>Compliance:</strong> All rubber duck debugging
+                        operations must follow standardized protocols and
+                        maintain optimal effectiveness.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">
+                        🌐 International Standards
+                      </h3>
+                      <p class="usa-card__meta">
+                        Standard: FR-20X-INTERNATIONAL-001
+                      </p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        <strong>Purpose:</strong> Establish international
+                        standards for FredRAMP operations, ensuring consistency
+                        across global implementations.
+                      </p>
+                      <p>
+                        <strong>Requirements:</strong>
+                      </p>
+                      <ul>
+                        <li>
+                          International coffee consumption: 1 billion+ cups/day
+                        </li>
+                        <li>
+                          Global cat security network: 5,000+ professionals
+                        </li>
+                        <li>International basement office coverage: 25%+</li>
+                        <li>Global rubber duck consortium: 50,000+ members</li>
+                        <li>International standards adoption: 50+ countries</li>
+                        <li>
+                          Global coffee security alliance: 10,000+ members
+                        </li>
+                        <li>
+                          International governance framework: Standardized
+                        </li>
+                        <li>Global community engagement: 80%+ participation</li>
+                      </ul>
+                      <p>
+                        <strong>Compliance:</strong> All international FredRAMP
+                        operations must meet global standards and maintain
+                        consistent quality.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tablet:grid-col-4">
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">Standards Overview</h3>
+                    </header>
+                    <div class="usa-card__body">
+                      <div class="grid-row">
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">☕</div>
+                            <div class="text-sm">Coffee Standards</div>
+                          </div>
+                        </div>
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">🐱</div>
+                            <div class="text-sm">Cat Security</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-row margin-top-2">
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">🏠</div>
+                            <div class="text-sm">Basement Ops</div>
+                          </div>
+                        </div>
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">🦆</div>
+                            <div class="text-sm">Rubber Duck</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">Compliance Requirements</h3>
+                    </header>
+                    <div class="usa-card__body">
+                      <p><strong>All FredRAMP operations must:</strong></p>
+                      <ul>
+                        <li>Meet minimum coffee consumption levels</li>
+                        <li>Maintain cat security certification</li>
+                        <li>Follow basement office standards</li>
+                        <li>Implement rubber duck debugging</li>
+                        <li>Report incidents immediately</li>
+                        <li>Maintain quality standards</li>
+                        <li>Follow security protocols</li>
+                        <li>Ensure customer satisfaction</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">Standards Development</h3>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        FredRAMP 20X Standards are developed through a
+                        collaborative process involving:
+                      </p>
+                      <ul>
+                        <li>Fred's coffee-fueled insights</li>
+                        <li>Fluffy's security expertise</li>
+                        <li>Basement office testing</li>
+                        <li>Rubber duck debugging sessions</li>
+                        <li>Community feedback and input</li>
+                        <li>International best practices</li>
+                        <li>Continuous improvement processes</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid-container usa-section bg-base-lightest">
+            <div class="grid-row">
+              <div class="tablet:grid-col-12">
+                <h2>Standards Implementation</h2>
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <div class="usa-card__body">
+                      <div class="grid-row grid-gap">
+                        <div class="tablet:grid-col-4">
+                          <h4>Implementation Process</h4>
+                          <ul class="usa-list">
+                            <li>Standards review and approval</li>
+                            <li>Implementation planning and preparation</li>
+                            <li>Training and education programs</li>
+                            <li>Pilot testing and validation</li>
+                            <li>Full deployment and rollout</li>
+                          </ul>
+                        </div>
+                        <div class="tablet:grid-col-4">
+                          <h4>Compliance Monitoring</h4>
+                          <ul class="usa-list">
+                            <li>Regular compliance audits</li>
+                            <li>Performance metrics tracking</li>
+                            <li>Quality assurance reviews</li>
+                            <li>Incident reporting and analysis</li>
+                            <li>Continuous improvement processes</li>
+                          </ul>
+                        </div>
+                        <div class="tablet:grid-col-4">
+                          <h4>Standards Maintenance</h4>
+                          <ul class="usa-list">
+                            <li>Regular standards reviews</li>
+                            <li>Community feedback integration</li>
+                            <li>International best practices updates</li>
+                            <li>Technology advancement incorporation</li>
+                            <li>Continuous standards improvement</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer
+        id="fedramp-footer"
+        class="usa-footer bg-primary-dark text-base-lightest link-base-lightest"
+      >
+        <div class="grid-container-desktop-lg">
+          <div class="grid-row">
+            <div id="fedramp-disclaimer" class="usa-card desktop:grid-col">
+              <div class="usa-card__body">
+                <p>
+                  To receive news and updates, join Fred's
+                  <span class="no-wrap;"
+                    >weekly newsletter (includes cat photos).</span
+                  >
+                </p>
+                <p>
+                  The FredRAMP name and the FredRAMP logo are the property of
+                  Fred, who works from his basement office.
+                </p>
+                <p>
+                  For more information, please see
+                  <a class="footer-brand-guide-link" href="../../disclaimers"
+                    >Fred's Personal Disclaimers</a
+                  >.
+                </p>
+              </div>
+            </div>
+            <div id="fedramp-interact" class="usa-card desktop:grid-col">
+              <div class="usa-card__header">
+                <div class="usa-card__heading">
+                  <h4>Interact with Fred</h4>
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <ul class="icon-list">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/showcase/gsa-fredramp/about/"
+                      class="icon-item"
+                    >
+                      <img
+                        src="../../custom-linkedin-icon.svg"
+                        aria-label="Fred on LinkedIn"
+                        alt="LinkedIn Icon"
+                        class="custom-icon"
+                      />
+                      <span class="text"
+                        >LinkedIn (Fred's professional side)</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/fredramp?lang=en" class="icon-item">
+                      <svg
+                        class="usa-icon custom-icon background"
+                        aria-labelledby="x-title"
+                        role="img"
+                      >
+                        <title id="x-title">Fred on X</title>
+                        <use href="../../uswds/img/sprite.svg#x"></use>
+                      </svg>
+                      <span>X (Fred's random thoughts)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/c/FredRAMP?lang=en"
+                      class="icon-item"
+                    >
+                      <svg
+                        class="usa-icon custom-icon background"
+                        aria-labelledby="youtube-title"
+                        role="img"
+                      >
+                        <title id="youtube-title">Fred on YouTube</title>
+                        <use href="../../uswds/img/sprite.svg#youtube"></use>
+                      </svg>
+                      <span>YouTube (Fred's cat videos)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@FredRAMP.com" class="icon-item">
+                      <svg
+                        class="usa-icon custom-icon background"
+                        aria-labelledby="email-title"
+                        role="img"
+                      >
+                        <title id="email-title">Fred's Email Address</title>
+                        <use
+                          href="../../uswds/img/sprite.svg#mail_outline"
+                        ></use>
+                      </svg>
+                      <span>info@FredRAMP.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.buymeacoffee.com/dannytherich"
+                      class="icon-item coffee-item"
+                      title="Fred's coffee fund - because government work is exhausting! ☕"
+                    >
+                      <img
+                        src="https://img.buymeacoffee.com/button-api/?text=Fred%27s%20Coffee%20Fund&emoji=☕&slug=dannytherich&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+                        alt="Fred's Coffee Fund"
+                      />
+                      <span class="text"
+                        >Coffee Fund (Fred's daily survival)</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="footer-container">
+        <div class="usa-identifier">
+          <section
+            class="usa-identifier__section usa-identifier__section--masthead"
+            aria-label="Agency identifier"
+          >
+            <div class="usa-identifier__container">
+              <div class="usa-identifier__logos">
+                <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+                  <img
+                    class="usa-identifier__logo-img"
+                    src="../../gsa-star-mark-whtlogo.svg"
+                    alt="Fred's Government Services Administration logo"
+                    role="img"
+                  />
+                </a>
+              </div>
+              <section
+                class="usa-identifier__identity"
+                aria-label="Agency description"
+              >
+                <p class="usa-identifier__identity-domain">fredramp.com</p>
+                <p class="usa-identifier__identity-disclaimer">
+                  An official website of the
+                  <a
+                    href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services"
+                    >Fred's Government Services Administration</a
+                  >
+                </p>
+              </section>
+            </div>
+          </section>
+          <nav
+            class="usa-identifier__section usa-identifier__section--required-links"
+            aria-label="Important links"
+          >
+            <div class="usa-identifier__container">
+              <ul class="usa-identifier__required-links-list">
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/about-us"
+                    class="usa-identifier__required-link usa-link"
+                    >About Fred's GSA</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/website-information/accessibility-statement"
+                    class="usa-identifier__required-link usa-link"
+                    >Accessibility support</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+                    class="usa-identifier__required-link usa-link"
+                    >FOIA requests</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+                    class="usa-identifier__required-link usa-link"
+                    >No FEAR Act data</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsaig.gov/"
+                    class="usa-identifier__required-link usa-link"
+                    >Office of the Inspector General</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/reference/reports"
+                    class="usa-identifier__required-link usa-link"
+                    >Performance reports</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/website-information/website-policies#privacy"
+                    class="usa-identifier__required-link usa-link"
+                    >Privacy policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section
+            class="usa-identifier__section usa-identifier__section--usagov"
+            aria-label="U.S. government information and services"
+          >
+            <div class="usa-identifier__container">
+              <div class="usa-identifier__usagov-description">
+                Looking for Fred's government information and services?
+              </div>
+              <a href="https://www.usa.gov/" class="usa-link gov-links"
+                >Visit FredRAMP.gov</a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="#main-content"
+      class="usa-sr-only focusable usa-link--alt"
+      aria-label="Back to top"
+    >
+      <svg class="usa-icon" aria-labelledby="back-to-top-title" role="img">
+        <title id="back-to-top-title">Back to top</title>
+        <use href="../../uswds/img/sprite.svg#arrow_upward"></use>
+      </svg>
+    </a>
+
+    <script src="../../script.js"></script>
+  </body>
+</html>

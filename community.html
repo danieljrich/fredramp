@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="FredRampLogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FredRAMP Community | FredRAMP.com</title>
+    <meta
+      name="description"
+      content="Join the FredRAMP community - where cybersecurity meets humor and coffee. Connect with Fred and fellow security enthusiasts."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FredRAMP Community | FredRAMP.com" />
+    <meta
+      property="og:description"
+      content="Join the FredRAMP community - where cybersecurity meets humor and coffee. Connect with Fred and fellow security enthusiasts."
+    />
+    <meta property="og:url" content="https://fredramp.com/community" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div style="display: contents">
+      <section
+        class="usa-banner"
+        data-testid="usa-banner"
+        lang="en"
+        aria-label="Official government website"
+      >
+        <div class="usa-accordion">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img
+                  class="usa-banner__header-flag"
+                  src="FredlandFlag.png"
+                  alt="Fredland flag"
+                />
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto">
+                <p class="usa-banner__header-text">
+                  NOT an official website of the United States government
+                </p>
+                <p class="usa-banner__header-action" aria-hidden="true">
+                  Fred told us to put this here
+                </p>
+              </div>
+              <button
+                class="usa-accordion__button usa-banner__button"
+                aria-expanded="false"
+                aria-controls="usa-banner-ssr-0-content"
+                type="button"
+              >
+                <span class="usa-banner__button-text">Fred's explanation</span>
+              </button>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <div class="gradient-wrapper">
+        <div class="gradient-background"></div>
+        <div class="mountain-wrapper home-page-mountain-wrapper">
+          <img
+            src="mountain_abstract.svg"
+            alt="Mountain background"
+            class="mountain-img object-fit:cover"
+          />
+        </div>
+        <div class="site-header transparent">
+          <section id="top-nav" class="top-nav">
+            <div class="usa-overlay"></div>
+            <header class="usa-header usa-header--basic">
+              <div class="usa-nav-container">
+                <div class="usa-navbar">
+                  <div class="usa-logo" id="logo">
+                    <a href="/" title="Home" aria-label="Home">
+                      <img
+                        class="desk usa-logo__img"
+                        src="FredRampLogo.png"
+                        alt="FredRAMP.com"
+                      />
+                    </a>
+                  </div>
+                  <div class="coffee-button-header">
+                    <a
+                      href="https://www.buymeacoffee.com/dannytherich"
+                      title="Fred needs caffeine to review your applications! ☕"
+                    >
+                      <img
+                        src="https://img.buymeacoffee.com/button-api/?text=Buy%20Fred%20Coffee&emoji=☕&slug=dannytherich&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+                        alt="Buy Fred Coffee"
+                      />
+                    </a>
+                  </div>
+                  <button class="usa-menu-btn">Menu</button>
+                </div>
+                <nav aria-label="Primary navigation" class="usa-nav site-nav">
+                  <ul class="usa-nav__primary usa-accordion">
+                    <li class="usa-nav__primary-item">
+                      <button
+                        class="usa-accordion__button usa-nav__link"
+                        aria-expanded="false"
+                        aria-controls="nav-menu-item-ssr-1"
+                      >
+                        <span>Updates & Fred's Priorities</span>
+                      </button>
+                      <ul id="nav-menu-item-ssr-1" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                          <a href="blog/1">Blog</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="community">Community</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="rfcs">Requests For Comment</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="governance">Governance</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="changelog">Changelog</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="scope">Scope</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                      <button
+                        class="usa-accordion__button usa-nav__link"
+                        aria-expanded="false"
+                        aria-controls="nav-menu-item-ssr-2"
+                      >
+                        <span>FredRAMP 20X (Fred's Vision)</span>
+                      </button>
+                      <ul id="nav-menu-item-ssr-2" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                          <a href="20x/goals">Goals</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="20x/phase-one">Phase One</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="20x/phase-two">Phase Two</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="20x/standards">Standards</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="20x/faqs">FAQs</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="usa-nav__primary-item">
+                      <button
+                        class="usa-accordion__button usa-nav__link"
+                        aria-expanded="false"
+                        aria-controls="nav-menu-item-ssr-3"
+                      >
+                        <span>Rev 5 Authorization (Fred's Rules)</span>
+                      </button>
+                      <ul id="nav-menu-item-ssr-3" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                          <a href="rev5/agency-authorization"
+                            >Agency Authorization</a
+                          >
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="rev5/documents-templates"
+                            >Documents & Templates</a
+                          >
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="rev5/stakeholders">Stakeholders</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </header>
+          </section>
+        </div>
+
+        <main id="main-content">
+          <section class="usa-hero">
+            <div class="grid-container">
+              <div class="usa-hero__callout usa-hero__callout--primary">
+                <h1 class="usa-hero__heading">
+                  <span class="usa-hero__heading--alt">FredRAMP Community</span>
+                  Where Security Meets Sarcasm
+                </h1>
+                <p>
+                  Welcome to the most caffeinated cybersecurity community on the
+                  internet. Join Fred and fellow security enthusiasts in
+                  discussions about government security, coffee consumption, and
+                  basement office management.
+                </p>
+                <a
+                  class="usa-button"
+                  href="https://www.buymeacoffee.com/dannytherich"
+                  >Buy Fred Coffee ☕</a
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="grid-container usa-section">
+            <div class="grid-row grid-gap">
+              <div class="tablet:grid-col-8">
+                <h2>Community Forums</h2>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">🏠 Basement Office Chat</h3>
+                      <p class="usa-card__meta">
+                        General Discussion • 1,247 posts
+                      </p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        The main hangout spot for all things FredRAMP. Share
+                        your security stories, ask questions, and discuss the
+                        latest in government cybersecurity (and coffee).
+                      </p>
+                      <div class="usa-card__footer">
+                        <a href="#" class="usa-button usa-button--outline"
+                          >Join Discussion</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">☕ Coffee & Security</h3>
+                      <p class="usa-card__meta">Coffee Talk • 892 posts</p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        Because every good security discussion starts with a
+                        good cup of coffee. Share your favorite brews, discuss
+                        caffeine levels needed for different security tasks, and
+                        debate the merits of various coffee delivery systems.
+                      </p>
+                      <div class="usa-card__footer">
+                        <a href="#" class="usa-button usa-button--outline"
+                          >Join Discussion</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">🐱 Cat Security Team</h3>
+                      <p class="usa-card__meta">Pet Security • 456 posts</p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        Share photos of your security cats, discuss how pets
+                        contribute to home office security, and learn about
+                        Fluffy's latest vulnerability detection techniques.
+                      </p>
+                      <div class="usa-card__footer">
+                        <a href="#" class="usa-button usa-button--outline"
+                          >Join Discussion</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">
+                        🔒 Security Assessment Help
+                      </h3>
+                      <p class="usa-card__meta">
+                        Technical Support • 2,103 posts
+                      </p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        Get help with your FredRAMP security assessments. Fred
+                        and the community are here to help you navigate the
+                        complex world of government security requirements (with
+                        a side of humor).
+                      </p>
+                      <div class="usa-card__footer">
+                        <a href="#" class="usa-button usa-button--outline"
+                          >Join Discussion</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">
+                        🎉 FredRAMP Success Stories
+                      </h3>
+                      <p class="usa-card__meta">Celebrations • 678 posts</p>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        Share your FredRAMP certification success stories!
+                        Whether you just passed your first assessment or
+                        completed your 50th, we want to celebrate with you (and
+                        maybe share some coffee).
+                      </p>
+                      <div class="usa-card__footer">
+                        <a href="#" class="usa-button usa-button--outline"
+                          >Join Discussion</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tablet:grid-col-4">
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">Community Stats</h3>
+                    </header>
+                    <div class="usa-card__body">
+                      <div class="grid-row">
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">1,247</div>
+                            <div class="text-sm">Members</div>
+                          </div>
+                        </div>
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">5,432</div>
+                            <div class="text-sm">Posts</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-row margin-top-2">
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">892</div>
+                            <div class="text-sm">Coffee Cups</div>
+                          </div>
+                        </div>
+                        <div class="grid-col-6">
+                          <div class="text-center">
+                            <div class="font-sans-3xl text-bold">47</div>
+                            <div class="text-sm">Cats</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">Community Guidelines</h3>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        <strong
+                          >Fred's Rules for Community Participation:</strong
+                        >
+                      </p>
+                      <ul>
+                        <li>
+                          Be respectful (even when discussing security failures)
+                        </li>
+                        <li>Share coffee recommendations freely</li>
+                        <li>Cat photos are always welcome</li>
+                        <li>
+                          No actual government secrets (Fred's basement isn't
+                          that secure)
+                        </li>
+                        <li>Humor is encouraged, but keep it professional</li>
+                        <li>Help others with their security questions</li>
+                        <li>Don't forget to buy Fred coffee occasionally</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <header class="usa-card__header">
+                      <h3 class="usa-card__heading">Join the Community</h3>
+                    </header>
+                    <div class="usa-card__body">
+                      <p>
+                        Ready to join the most caffeinated security community?
+                        Sign up below and start connecting with fellow FredRAMP
+                        enthusiasts!
+                      </p>
+                      <form class="usa-form">
+                        <div class="usa-form-group">
+                          <label class="usa-label" for="username"
+                            >Username</label
+                          >
+                          <input
+                            class="usa-input"
+                            id="username"
+                            name="username"
+                            type="text"
+                            placeholder="Your username"
+                          />
+                        </div>
+                        <div class="usa-form-group">
+                          <label class="usa-label" for="email"
+                            >Email address</label
+                          >
+                          <input
+                            class="usa-input"
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="your@email.com"
+                          />
+                        </div>
+                        <div class="usa-form-group">
+                          <label class="usa-label" for="coffee"
+                            >Favorite Coffee</label
+                          >
+                          <select class="usa-select" id="coffee" name="coffee">
+                            <option value="">
+                              Select your coffee preference
+                            </option>
+                            <option value="espresso">
+                              Espresso (Security Expert)
+                            </option>
+                            <option value="americano">
+                              Americano (Government Standard)
+                            </option>
+                            <option value="latte">
+                              Latte (Basement Comfort)
+                            </option>
+                            <option value="cappuccino">
+                              Cappuccino (Fred's Choice)
+                            </option>
+                            <option value="instant">
+                              Instant (Emergency Protocol)
+                            </option>
+                          </select>
+                        </div>
+                        <button class="usa-button" type="submit">
+                          Join Fred's Community
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid-container usa-section bg-base-lightest">
+            <div class="grid-row">
+              <div class="tablet:grid-col-12">
+                <h2>Recent Community Activity</h2>
+                <div class="usa-card">
+                  <div class="usa-card__container">
+                    <div class="usa-card__body">
+                      <div class="grid-row grid-gap">
+                        <div class="tablet:grid-col-4">
+                          <h4>Latest Posts</h4>
+                          <ul class="usa-list">
+                            <li>
+                              <strong>SecurityCat_47:</strong> "My cat just
+                              detected a vulnerability in my home router. Should
+                              I give her a raise?"
+                              <span class="text-sm text-base-dark"
+                                >2 hours ago</span
+                              >
+                            </li>
+                            <li>
+                              <strong>CoffeeAddict_23:</strong> "What's the
+                              optimal coffee-to-security-assessment ratio?
+                              Currently at 3:1 and feeling good."
+                              <span class="text-sm text-base-dark"
+                                >4 hours ago</span
+                              >
+                            </li>
+                            <li>
+                              <strong>BasementAdmin:</strong> "Fred's latest
+                              blog post about the coffee shortage is pure gold.
+                              Link in comments!"
+                              <span class="text-sm text-base-dark"
+                                >6 hours ago</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="tablet:grid-col-4">
+                          <h4>Popular Topics</h4>
+                          <ul class="usa-list">
+                            <li>☕ Coffee delivery systems for remote work</li>
+                            <li>🐱 Cat security certifications</li>
+                            <li>🏠 Basement office setup tips</li>
+                            <li>🔒 FredRAMP assessment horror stories</li>
+                            <li>☕ Emergency coffee protocols</li>
+                          </ul>
+                        </div>
+                        <div class="tablet:grid-col-4">
+                          <h4>Community Events</h4>
+                          <ul class="usa-list">
+                            <li>
+                              <strong>Weekly Coffee Chat:</strong> Every Friday
+                              at 2 PM EST
+                            </li>
+                            <li>
+                              <strong>Cat Security Showcase:</strong> First
+                              Monday of each month
+                            </li>
+                            <li>
+                              <strong>Fred's Office Hours:</strong> Tuesdays and
+                              Thursdays
+                            </li>
+                            <li>
+                              <strong>Security Assessment Support:</strong>
+                              Daily 9 AM - 5 PM EST
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer
+        id="fedramp-footer"
+        class="usa-footer bg-primary-dark text-base-lightest link-base-lightest"
+      >
+        <div class="grid-container-desktop-lg">
+          <div class="grid-row">
+            <div id="fedramp-disclaimer" class="usa-card desktop:grid-col">
+              <div class="usa-card__body">
+                <p>
+                  To receive news and updates, join Fred's
+                  <span class="no-wrap;"
+                    >weekly newsletter (includes cat photos).</span
+                  >
+                </p>
+                <p>
+                  The FredRAMP name and the FredRAMP logo are the property of
+                  Fred, who works from his basement office.
+                </p>
+                <p>
+                  For more information, please see
+                  <a class="footer-brand-guide-link" href="disclaimers"
+                    >Fred's Personal Disclaimers</a
+                  >.
+                </p>
+              </div>
+            </div>
+            <div id="fedramp-interact" class="usa-card desktop:grid-col">
+              <div class="usa-card__header">
+                <div class="usa-card__heading">
+                  <h4>Interact with Fred</h4>
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <ul class="icon-list">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/showcase/gsa-fredramp/about/"
+                      class="icon-item"
+                    >
+                      <img
+                        src="custom-linkedin-icon.svg"
+                        aria-label="Fred on LinkedIn"
+                        alt="LinkedIn Icon"
+                        class="custom-icon"
+                      />
+                      <span class="text"
+                        >LinkedIn (Fred's professional side)</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/fredramp?lang=en" class="icon-item">
+                      <svg
+                        class="usa-icon custom-icon background"
+                        aria-labelledby="x-title"
+                        role="img"
+                      >
+                        <title id="x-title">Fred on X</title>
+                        <use href="uswds/img/sprite.svg#x"></use>
+                      </svg>
+                      <span>X (Fred's random thoughts)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/c/FredRAMP?lang=en"
+                      class="icon-item"
+                    >
+                      <svg
+                        class="usa-icon custom-icon background"
+                        aria-labelledby="youtube-title"
+                        role="img"
+                      >
+                        <title id="youtube-title">Fred on YouTube</title>
+                        <use href="uswds/img/sprite.svg#youtube"></use>
+                      </svg>
+                      <span>YouTube (Fred's cat videos)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@FredRAMP.com" class="icon-item">
+                      <svg
+                        class="usa-icon custom-icon background"
+                        aria-labelledby="email-title"
+                        role="img"
+                      >
+                        <title id="email-title">Fred's Email Address</title>
+                        <use href="uswds/img/sprite.svg#mail_outline"></use>
+                      </svg>
+                      <span>info@FredRAMP.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.buymeacoffee.com/dannytherich"
+                      class="icon-item coffee-item"
+                      title="Fred's coffee fund - because government work is exhausting! ☕"
+                    >
+                      <img
+                        src="https://img.buymeacoffee.com/button-api/?text=Fred%27s%20Coffee%20Fund&emoji=☕&slug=dannytherich&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
+                        alt="Fred's Coffee Fund"
+                      />
+                      <span class="text"
+                        >Coffee Fund (Fred's daily survival)</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="footer-container">
+        <div class="usa-identifier">
+          <section
+            class="usa-identifier__section usa-identifier__section--masthead"
+            aria-label="Agency identifier"
+          >
+            <div class="usa-identifier__container">
+              <div class="usa-identifier__logos">
+                <a href="https://www.gsa.gov/" class="usa-identifier__logo">
+                  <img
+                    class="usa-identifier__logo-img"
+                    src="gsa-star-mark-whtlogo.svg"
+                    alt="Fred's Government Services Administration logo"
+                    role="img"
+                  />
+                </a>
+              </div>
+              <section
+                class="usa-identifier__identity"
+                aria-label="Agency description"
+              >
+                <p class="usa-identifier__identity-domain">fredramp.com</p>
+                <p class="usa-identifier__identity-disclaimer">
+                  An official website of the
+                  <a
+                    href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services"
+                    >Fred's Government Services Administration</a
+                  >
+                </p>
+              </section>
+            </div>
+          </section>
+          <nav
+            class="usa-identifier__section usa-identifier__section--required-links"
+            aria-label="Important links"
+          >
+            <div class="usa-identifier__container">
+              <ul class="usa-identifier__required-links-list">
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/about-us"
+                    class="usa-identifier__required-link usa-link"
+                    >About Fred's GSA</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/website-information/accessibility-statement"
+                    class="usa-identifier__required-link usa-link"
+                    >Accessibility support</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+                    class="usa-identifier__required-link usa-link"
+                    >FOIA requests</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+                    class="usa-identifier__required-link usa-link"
+                    >No FEAR Act data</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsaig.gov/"
+                    class="usa-identifier__required-link usa-link"
+                    >Office of the Inspector General</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/reference/reports"
+                    class="usa-identifier__required-link usa-link"
+                    >Performance reports</a
+                  >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                  <a
+                    href="https://www.gsa.gov/website-information/website-policies#privacy"
+                    class="usa-identifier__required-link usa-link"
+                    >Privacy policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section
+            class="usa-identifier__section usa-identifier__section--usagov"
+            aria-label="U.S. government information and services"
+          >
+            <div class="usa-identifier__container">
+              <div class="usa-identifier__usagov-description">
+                Looking for Fred's government information and services?
+              </div>
+              <a href="https://www.usa.gov/" class="usa-link gov-links"
+                >Visit FredRAMP.gov</a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="#main-content"
+      class="usa-sr-only focusable usa-link--alt"
+      aria-label="Back to top"
+    >
+      <svg class="usa-icon" aria-labelledby="back-to-top-title" role="img">
+        <title id="back-to-top-title">Back to top</title>
+        <use href="uswds/img/sprite.svg#arrow_upward"></use>
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
